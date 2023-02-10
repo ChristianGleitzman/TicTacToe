@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <audio id="background-music" src="background_music.mp3" loop></audio>
+    <audio id="click-sound" src="click.wav"></audio>
+    <h1>Tic Tac Toe</h1>
+    <div id="scoreboard">
+      <p>X's Score: <span id="x-score">0</span></p>
+      <p>O's Score: <span id="o-score">0</span></p>
+    </div>
+    <button id="music-toggle">
+      <img src="https://cdn-icons-png.flaticon.com/512/727/727240.png" id="music-off">
+      <img src="https://cdn-icons-png.flaticon.com/512/56/56769.png" id="music-on">
+    </button>
+    <div id="game-board">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+    <div class="buttons">
+      <button class="button" id="reset-button">Reset</button>
+      <button class="button" id="ai-toggle-button">AI Opponent: Off</button>
+      <button class="button" id="help-button">Help</button>
+    </div>
+    <p id="game-result">Player X Moves First</p>
+    <div id="help-dialogue">
+      <p>Tic Tac Toe is a two-player game. You can play against a friend or an AI by toggling the AI button. The goal is to place three of your symbols in a row, either horizontally, vertically, or diagonally. 
+        Player X always goes first. The first player to get three in a row wins the game. If all of the spaces on the board are filled and no one has won, then the game is a stalemate.</p>
+      <button class="button" id="close-dialogue">Close</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
